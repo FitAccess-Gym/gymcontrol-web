@@ -12,7 +12,7 @@ export default function AppLayout({
     <div className="flex">
       <Sidebar />
 
-      <main className="flex-1 bg-slate-100 p-8 min-h-screen">
+      <main className="flex-1 bg-slate-100 p-6 min-h-screen">
         {children}
       </main>
     </div>

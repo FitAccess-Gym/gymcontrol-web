@@ -18,9 +18,15 @@ export default async function ClientesPage() {
           Clientes
         </h1>
 
-        <button className="rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white shadow-lg hover:bg-blue-700 transition">
+        
+        <Link 
+          href="/clientes/nuevo"
+          className="rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg hover:bg-blue-700" 
+        > 
           Nuevo Cliente
-        </button>
+        </Link> 
+
+        
       </div>
 
       <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl">

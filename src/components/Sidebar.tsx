@@ -28,7 +28,7 @@ export default function Sidebar() {
     }`; 
  
   return ( 
-    <aside className="flex min-h-screen w-72 flex-col bg-slate-900 text-white shadow-2xl"> 
+    <aside className="flex min-h-screen w-58 flex-col bg-slate-900 text-white shadow-2xl"> 
       <div className="border-b border-slate-800 px-6 py-6"> 
         <h1 className="text-2xl font-bold tracking-wide"> 
           GymControl Pro 

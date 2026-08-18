@@ -55,7 +55,7 @@ export default function NuevoClientePage() {
   return (
 <AppLayout>
   <div className="mb-8">
-    <h1 className="text-5xl font-bold text-slate-800">
+    <h1 className="text-4xl font-bold text-slate-800">
       Nuevo Cliente
     </h1>
 
