@@ -4,7 +4,7 @@ export default function NuevaSedePage() {
   return (
     <AppLayout>
       <div className="mb-8">
-  <h1 className="text-4xl font-bold text-slate-800">
+  <h1 className="text-3xl font-bold text-slate-800">
     🏢 Nueva Sede
   </h1>
 
@@ -13,7 +13,7 @@ export default function NuevaSedePage() {
   </p>
 </div>
 
-      <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-xl">
+      <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl">
         <form className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-6">
             <label className="mb-2 block text-sm font-semibold uppercase tracking-wide text-slate-600">
@@ -21,7 +21,7 @@ export default function NuevaSedePage() {
             </label>
 
             <input
-              className="w-full rounded-xl border border-slate-300 bg-white p-4 text-slate-900 uppercase shadow-sm transition 
+              className="w-full rounded-xl border border-slate-300 bg-white p-3 text-slate-900 uppercase shadow-sm transition 
                           focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-200"
               placeholder="Nombre de la sede"
             />
@@ -33,7 +33,7 @@ export default function NuevaSedePage() {
             </label>
 
             <input
-              className="w-full rounded-xl border border-slate-300 bg-white p-4 text-slate-900 uppercase shadow-sm transition 
+              className="w-full rounded-xl border border-slate-300 bg-white p-3 text-slate-900 uppercase shadow-sm transition 
                           focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-200"
               placeholder="Ciudad"
             />
@@ -45,7 +45,7 @@ export default function NuevaSedePage() {
             </label>
 
             <input
-              className="w-full rounded-xl border border-slate-300 bg-white p-4 text-slate-900 uppercase shadow-sm transition 
+              className="w-full rounded-xl border border-slate-300 bg-white p-3 text-slate-900 uppercase shadow-sm transition 
                           focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-200"
               placeholder="Dirección"
             />
@@ -57,7 +57,7 @@ export default function NuevaSedePage() {
             </label>
 
             <input
-              className="w-full rounded-xl border border-slate-300 bg-white p-4 text-slate-900 uppercase shadow-sm transition 
+              className="w-full rounded-xl border border-slate-300 bg-white p-3 text-slate-900 shadow-sm transition 
                           focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-200"
               placeholder="Teléfono"
             />
@@ -66,7 +66,7 @@ export default function NuevaSedePage() {
           <div className="col-span-12">
             <button
               type="submit"
-              className="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-200 
+              className="rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg transition-all duration-200 
                           hover:scale-105 hover:bg-blue-700"
             >
               GUARDAR

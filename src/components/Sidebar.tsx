@@ -1,6 +1,4 @@
  
- 
- 
 
 "use client"; 
  
@@ -15,13 +13,14 @@ import {
   CreditCard, 
   ClipboardCheck, 
   Settings, 
+  Dumbbell, 
 } from "lucide-react"; 
  
 export default function Sidebar() { 
   const pathname = usePathname(); 
  
   const menuClass = (href: string) => 
-    `flex items-center gap-3 rounded-xl px-4 py-3 transition-all duration-200 hover:bg-slate-800 hover:translate-x-1 ${ 
+    `flex items-center gap-3 rounded-xl px-4 py-3 text-sm transition-all duration-200 hover:bg-slate-800 hover:translate-x-1 ${ 
       pathname === href 
         ? "bg-blue-600 text-white shadow-lg" 
         : "text-slate-300" 
@@ -30,10 +29,11 @@ export default function Sidebar() {
   return ( 
     <aside className="flex min-h-screen w-58 flex-col bg-slate-900 text-white shadow-2xl"> 
       <div className="border-b border-slate-800 px-6 py-6"> 
-        <h1 className="text-2xl font-bold tracking-wide"> 
-          GymControl Pro 
+        <h1 className="text-2xl font-bold tracking-wide text-white">
+          FitAdmin+
+        
         </h1> 
-        <p className="mt-1 text-sm text-slate-400"> 
+        <p className="mt-1 text-xs text-slate-400"> 
           Gestión Integral de Gimnasios 
         </p> 
       </div> 
@@ -47,6 +47,11 @@ export default function Sidebar() {
         </Link> 
  
         <p className="px-3 pt-6 text-xs font-bold uppercase tracking-widest text-slate-500">Gestión</p> 
+ 
+        <Link href="/gimnasios" className={menuClass("/gimnasios")}> 
+          <Dumbbell size={20} /> 
+          <span>Gimnasios</span> 
+        </Link> 
  
         <Link href="/clientes" className={menuClass("/clientes")}> 
           <Users size={20} /> 
@@ -88,8 +93,8 @@ export default function Sidebar() {
         </Link> 
       </nav> 
  
-      <div className="border-t border-slate-800 p-6"> 
-        <div className="rounded-xl bg-slate-800 p-4"> 
+      <div className="border-t border-slate-800 p-4"> 
+        <div className="rounded-xl bg-slate-800 p-2"> 
           <p className="font-semibold">HAMMER JAIR CRUZ GUAJE</p> 
           <p className="text-sm text-slate-400">Administrador</p> 
           <p className="mt-2 text-xs text-green-400">● En línea</p> 

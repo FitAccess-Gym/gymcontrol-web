@@ -10,7 +10,7 @@ export default async function SedesPage() {
   return ( 
     <AppLayout> 
       <div className="mb-8 flex items-center justify-between"> 
-        <h1 className="text-4xl font-bold text-slate-800"> 
+        <h1 className="text-3xl font-bold text-slate-800"> 
           Sedes 
         </h1> 
  
@@ -26,10 +26,10 @@ export default async function SedesPage() {
         <table className="w-full"> 
           <thead className="bg-slate-100"> 
             <tr> 
-              <th className="p-5 text-left">Nombre</th> 
-              <th className="p-5 text-left">Ciudad</th> 
-              <th className="p-5 text-left">Dirección</th> 
-              <th className="p-5 text-left">Teléfono</th> 
+              <th className="p-3 text-left">Nombre</th> 
+              <th className="p-3 text-left">Ciudad</th> 
+              <th className="p-3 text-left">Dirección</th> 
+              <th className="p-3 text-left">Teléfono</th> 
             </tr> 
           </thead> 
  
@@ -39,10 +39,10 @@ export default async function SedesPage() {
                 key={sede.id} 
                 className="border-t border-slate-200" 
               > 
-                <td className="p-5">{sede.nombre}</td> 
-                <td className="p-5">{sede.ciudad}</td> 
-                <td className="p-5">{sede.direccion}</td> 
-                <td className="p-5">{sede.telefono}</td> 
+                <td className="p-3">{sede.nombre}</td> 
+                <td className="p-3">{sede.ciudad}</td> 
+                <td className="p-3">{sede.direccion}</td> 
+                <td className="p-3">{sede.telefono}</td> 
               </tr> 
             ))} 
           </tbody> 
